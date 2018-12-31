@@ -3,8 +3,8 @@
 ```bash
 git clone git@github.com:elderapo/obywatel-gov-pl-passport-readiness-checker.git
 cd ./obywatel-gov-pl-passport-readiness-checker.
-yarn install # optionally npm install
-cp .env.sample .env #
+yarn install # or you can use npm and execute npm install instead
+cp .env.sample .env
 ```
 
 Then you need to set correct `CASE_NUMBER` in `.env` file.
