@@ -13,5 +13,4 @@ Then you need to set correct `CASE_NUMBER` in `.env` file.
 yarn start
 ```
 
-Optionally you can install better polish TTS pack:
-`https://forbot.pl/forum/topic/1220-inne-syntezator-mowy-w-twoim-robocie/`
+Optionally you can get better polish TTS support by [following these instructions](https://forbot.pl/forum/topic/1220-inne-syntezator-mowy-w-twoim-robocie/).
