@@ -7,12 +7,12 @@ export interface ObywatelGOVPLCase {
   nrWniosku: string;
 }
 
-export enum ObywatelGOVPLSPassportRedinessStates {
+export enum ObywatelGOVPLSPassportReadinessStates {
   ApplicationAccepted = "Twój wniosek został przyjęty w urzędzie. Nie możesz jeszcze odebrać paszportu."
 }
 
 export class ObywatelGOVPLAPI {
-  private static CHECK_PASSPORT_REDINESS_URL =
+  private static CHECK_PASSPORT_READINESS_URL =
     "https://obywatel.gov.pl/wyjazd-za-granice/sprawdz-czy-twoj-paszport-jest-gotowy";
 
   private static getFinalUrlFromHTML(html: string) {
@@ -38,7 +38,7 @@ export class ObywatelGOVPLAPI {
     const jar = rp.jar();
 
     const html: string = await rp.get({
-      url: this.CHECK_PASSPORT_REDINESS_URL,
+      url: this.CHECK_PASSPORT_READINESS_URL,
       jar
     });
 

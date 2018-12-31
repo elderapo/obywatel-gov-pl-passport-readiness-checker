@@ -1,8 +1,8 @@
-# obywatel-gov-pl-passport-rediness-checker
+# obywatel-gov-pl-passport-readiness-checker.
 
 ```bash
-git clone git@github.com:elderapo/obywatel-gov-pl-passport-rediness-checker.git
-cd ./obywatel-gov-pl-passport-rediness-checker
+git clone git@github.com:elderapo/obywatel-gov-pl-passport-readiness-checker.git
+cd ./obywatel-gov-pl-passport-readiness-checker.
 yarn install # optionally npm install
 cp .env.sample .env #
 ```

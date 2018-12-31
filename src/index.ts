@@ -2,7 +2,7 @@ require("dotenv").config({});
 
 import {
   ObywatelGOVPLAPI,
-  ObywatelGOVPLSPassportRedinessStates
+  ObywatelGOVPLSPassportReadinessStates
 } from "./ObywatelGOVPLAPI";
 import { sleep } from "./utils";
 import { say, playStateChangedSound } from "./say";
@@ -18,7 +18,7 @@ const main = async () => {
   console.log(`Case number: ${caseNumber}`);
   console.log(`Going to be checking each ${checkInterval} ms...`);
 
-  let previousState: ObywatelGOVPLSPassportRedinessStates = null;
+  let previousState: ObywatelGOVPLSPassportReadinessStates = null;
   let tryNumber = 0;
 
   while (true) {
@@ -31,7 +31,7 @@ const main = async () => {
         );
         if (
           result.status !==
-          ObywatelGOVPLSPassportRedinessStates.ApplicationAccepted
+          ObywatelGOVPLSPassportReadinessStates.ApplicationAccepted
         ) {
           await say(result.status);
         }
@@ -40,7 +40,7 @@ const main = async () => {
           await playStateChangedSound();
         }
 
-        previousState = result.status as ObywatelGOVPLSPassportRedinessStates;
+        previousState = result.status as ObywatelGOVPLSPassportReadinessStates;
       }
     } catch (ex) {}
 
