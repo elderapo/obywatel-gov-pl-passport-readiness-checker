@@ -33,8 +33,8 @@ const main = async () => {
           result.status !==
           ObywatelGOVPLSPassportReadinessStates.ApplicationAccepted
         ) {
-          await say(result.status);
         }
+        await say(result.status);
 
         if (previousState !== null && previousState !== result.status) {
           await playStateChangedSound();
