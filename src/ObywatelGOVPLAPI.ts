@@ -7,6 +7,10 @@ export interface ObywatelGOVPLCase {
   nrWniosku: string;
 }
 
+export enum ObywatelGOVPLSPassportRedinessStates {
+  ApplicationAccepted = "Twój wniosek został przyjęty w urzędzie. Nie możesz jeszcze odebrać paszportu."
+}
+
 export class ObywatelGOVPLAPI {
   private static CHECK_PASSPORT_REDINESS_URL =
     "https://obywatel.gov.pl/wyjazd-za-granice/sprawdz-czy-twoj-paszport-jest-gotowy";
