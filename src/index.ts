@@ -31,7 +31,9 @@ const main = async () => {
         );
         if (
           result.status !==
-          ObywatelGOVPLSPassportReadinessStates.ApplicationAccepted
+            ObywatelGOVPLSPassportReadinessStates.ApplicationAccepted &&
+          result.status !==
+            ObywatelGOVPLSPassportReadinessStates.PassportInProgress
         ) {
           await say(result.status);
         }

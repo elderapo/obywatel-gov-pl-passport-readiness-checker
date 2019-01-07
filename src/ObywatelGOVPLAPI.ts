@@ -8,7 +8,8 @@ export interface ObywatelGOVPLCase {
 }
 
 export enum ObywatelGOVPLSPassportReadinessStates {
-  ApplicationAccepted = "Twój wniosek został przyjęty w urzędzie. Nie możesz jeszcze odebrać paszportu."
+  ApplicationAccepted = "Twój wniosek został przyjęty w urzędzie. Nie możesz jeszcze odebrać paszportu.",
+  PassportInProgress = "Twój paszport jest w realizacji. Nie możesz go jeszcze odebrać."
 }
 
 export class ObywatelGOVPLAPI {
